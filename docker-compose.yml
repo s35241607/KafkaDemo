@@ -1,0 +1,6 @@
+services:
+  kafkademo.api:
+    image: ${DOCKER_REGISTRY-}kafkademoapi
+    build:
+      context: KafkaDemo.Api
+      dockerfile: Dockerfile
